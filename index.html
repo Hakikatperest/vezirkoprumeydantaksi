@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vezirköprü Meydan Taksi: 0544 287 30 43 | 7/24 Güvenli Taksi Hizmeti</title>
+    <meta name="description" content="Vezirköprü'de 7/24 güvenli ve konforlu taksi hizmeti. Hemen ara: 0544 287 30 43. Şehir içi, şehirler arası, havaalanı transferi ve turistik gezi hizmetleri.">
+    <meta name="keywords" content="vezirköprü taksi, vezirköprü meydan taksi, vezirköprü taksi durağı, vezirköprü acil taksi, 0544 287 30 43, samsun taksi, havaalanı transferi, şehirler arası taksi, acil taksi">
+    <meta name="author" content="Vezirköprü Meydan Taksi">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Vezirköprü Meydan Taksi: 0544 287 30 43 | 7/24 Güvenli Taksi Hizmeti">
+    <meta property="og:description" content="Vezirköprü'de 7/24 güvenli ve konforlu taksi hizmeti. Hemen ara: 0544 287 30 43. Hızlı, güvenilir ve ekonomik çözümler.">
+    <meta property="og:type" content="website">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #FFD700; /* Taksilere uygun sarı renk */
+            --secondary-color: #000000; /* Siyah */
+            --accent-color: #2196F3; /* Mavi - Hemen Ara butonları için */
+            --light-color: #f8f9fa;
+            --dark-color: #0d1b2a;
+            --gray-color: #6c757d;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --gradient-primary: linear-gradient(135deg, #FFD700 0%, #FFC400 100%); /* Sarı gradient */
+            --gradient-secondary: linear-gradient(135deg, #000000 0%, #333333 100%); /* Siyah gradient */
+            --gradient-blue: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); /* Mavi gradient */
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Mavi buton (acil/ara butonları için) */
+        .btn-primary {
+            background: var(--gradient-blue);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+        }
+        
+        /* Sarı buton (ikincil butonlar için) */
+        .btn-secondary {
+            background: var(--gradient-primary);
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #FFC400 0%, #FFB300 100%);
+        }
+        
+        .btn-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .btn-wave-effect::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn-wave-effect:hover::after {
+            left: 100%;
+        }
+        
+        section {
+            padding: 90px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.8rem;
+            display: inline-block;
+            padding-bottom: 15px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 15px auto 0;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: var(--gradient-secondary);
+            padding: 18px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--primary-color);
+        }
+        
+        /* Desktop Navigation */
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        .desktop-nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .desktop-nav ul li {
+            margin-left: 30px;
+            position: relative;
+        }
+        
+        .desktop-nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            padding: 8px 0;
+            position: relative;
+        }
+        
+        .desktop-nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .desktop-nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+        
+        .desktop-nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Mobile Navigation */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            background: rgba(255, 215, 0, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100vh;
+            background: var(--gradient-secondary);
+            z-index: 1001;
+            padding: 100px 30px 30px;
+            transition: var(--transition);
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .mobile-nav.active {
+            right: 0;
+        }
+        
+        .mobile-nav ul {
+            list-style: none;
+        }
+        
+        .mobile-nav ul li {
+            margin-bottom: 20px;
+        }
+        
+        .mobile-nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            display: block;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: var(--transition);
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .mobile-nav ul li a:hover {
+            background: rgba(255, 215, 0, 0.15);
+            color: var(--primary-color);
+            transform: translateX(10px);
+        }
+        
+        .mobile-nav-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 1.8rem;
+            color: white;
+            cursor: pointer;
+            background: rgba(255, 215, 0, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('images/vezirkoprutaksi1.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            color: white;
+            margin-bottom: 25px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero h1 span {
+            color: var(--primary-color);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: #fff;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 35px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 2px solid rgba(255, 215, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .service-card p {
+            color: var(--gray-color);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .service-card .btn-primary {
+            display: inline-block;
+            margin: 0 auto;
+        }
+        
+        /* Reviews Section */
+        .reviews {
+            background-color: #f8fafc;
+        }
+        
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .review-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .review-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .reviewer-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .reviewer-name h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .review-date {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        .review-stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .review-text {
+            color: var(--dark-color);
+            line-height: 1.6;
+            font-style: italic;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 15px;
+        }
+        
+        /* Image Gallery Section */
+        .gallery {
+            background-color: white;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 300px;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* SEO Article Section */
+        .seo-article {
+            background-color: white;
+        }
+        
+        .article-container {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: var(--shadow);
+            border: 2px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .article-title {
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+        }
+        
+        .article-content h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .article-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .article-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .highlight-box {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .highlight-box h4 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: #f8fafc;
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 2px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .faq-question {
+            background: white;
+            color: var(--secondary-color);
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .faq-question:hover {
+            background: rgba(255, 215, 0, 0.05);
+        }
+        
+        .faq-question h3 {
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        .faq-answer {
+            background-color: white;
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-answer.active {
+            padding: 30px;
+            max-height: 500px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+        
+        .contact-item {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            transition: var(--transition);
+            border: 2px solid rgba(255, 215, 0, 0.1);
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-item i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .contact-item p {
+            color: #555;
+        }
+        
+        /* Popular Searches Section */
+        .popular-searches {
+            background-color: #f8fafc;
+            padding: 90px 0;
+        }
+        
+        .searches-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .search-tag {
+            display: inline-block;
+            background: white;
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .search-tag:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            color: var(--primary-color);
+        }
+        
+        .search-tag i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #bdc3c7;
+            padding: 60px 0 25px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 25px;
+        }
+        
+        .footer-logo span {
+            color: var(--primary-color);
+        }
+        
+        .footer-copyright {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Floating Action Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .floating-btn {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .floating-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #1ebe5d 100%);
+        }
+        
+        .floating-btn.whatsapp:hover {
+            background: linear-gradient(135deg, #1ebe5d 0%, #25D366 100%);
+        }
+        
+        /* WhatsApp mesaj balonu */
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 75px;
+            background: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: none;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7);
+            }
+            100% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            }
+        }
+        
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            border-width: 8px 0 8px 8px;
+            border-style: solid;
+            border-color: transparent transparent transparent #25D366;
+        }
+        
+        .floating-btn.call {
+            background: var(--gradient-blue);
+        }
+        
+        .floating-btn.call:hover {
+            background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+            
+            .article-container {
+                padding: 40px 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            
+            .mobile-nav-toggle {
+                display: flex;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 70px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+            }
+            
+            .whatsapp-tooltip {
+                font-size: 12px;
+                padding: 8px 15px;
+                right: 65px;
+            }
+            
+            .article-container {
+                padding: 30px 20px;
+            }
+            
+            .article-content h3 {
+                font-size: 1.5rem;
+            }
+            
+            .service-card .btn-primary {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 14px;
+            }
+            
+            .services-list, .reviews-container, .gallery-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .logo {
+                font-size: 1.6rem;
+            }
+            
+            .contact-item {
+                min-width: 100%;
+            }
+            
+            .searches-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .search-tag {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">Vezirköprü <span>Meydan Taksi</span></a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#services">Hizmetlerimiz</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#reviews">Müşteri Yorumları</a></li>
+                    <li><a href="#faq">SSS</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Navigation Toggle -->
+            <div class="mobile-nav-toggle" id="mobileNavToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-close" id="mobileNavClose">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#services">Hizmetlerimiz</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#reviews">Müşteri Yorumları</a></li>
+                    <li><a href="#faq">SSS</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Vezirköprü'de <span>7/24</span> Güvenli Taksi Hizmeti</h1>
+            <p>Vezirköprü Meydan Taksi olarak 7/24 hizmetinizdeyiz. Şehir içi, şehirler arası, havaalanı transferi ve turistik gezi hizmetlerimizle yanınızdayız. Temiz araçlar, deneyimli şoförler ve uygun fiyat garantisi.</p>
+            
+            <div class="btn-center">
+                <a href="tel:05442873043" class="btn btn-primary btn-wave-effect">
+                    <i class="fas fa-phone-alt"></i> Hemen Ara: 0544 287 30 43
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hizmetlerimiz</h2>
+                <p>Vezirköprü'de sunduğumuz kapsamlı taksi hizmetleri ile her türlü ulaşım ihtiyacınız için çözüm sunuyoruz.</p>
+            </div>
+            
+            <div class="services-list">
+                <!-- Şehir İçi Taksi -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-taxi"></i>
+                    </div>
+                    <h3>Şehir İçi Taksi</h3>
+                    <p>Vezirköprü'de şehir içi ulaşım ihtiyaçlarınız için 7/24 hizmet veriyoruz. Okul, iş, hastane, alışveriş ve tüm günlük ihtiyaçlarınız için güvenli ulaşım.</p>
+                    <a href="tel:05442873043" class="btn btn-primary">Hemen Ara</a>
+                </div>
+                
+                <!-- Şehirler Arası Taksi -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Şehirler Arası Taksi</h3>
+                    <p>Samsun, Amasya, Çorum, Sinop ve çevre illere güvenli ve konforlu şehirler arası taksi hizmeti. Ekonomik fiyatlar ve konforlu yolculuk.</p>
+                    <a href="tel:05442873043" class="btn btn-primary">Hemen Ara</a>
+                </div>
+                
+                <!-- Havaalanı Transferi -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Havaalanı Transferi</h3>
+                    <p>Samsun Çarşamba Havalimanı ve çevre illerdeki havaalanlarına zamanında ve güvenli transfer hizmeti. Uçuş saatlerinize uygun planlama yapıyoruz.</p>
+                    <a href="tel:05442873043" class="btn btn-primary">Hemen Ara</a>
+                </div>
+                
+                <!-- Turistik Gezi -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Turistik Gezi</h3>
+                    <p>Vezirköprü Şahinkaya Kanyonu, Kunduz Dağı, Termal kaplıcalar ve diğer turistik noktalara rehberlik hizmeti de sunulan özel tur taksilerimizle geziler düzenliyoruz.</p>
+                    <a href="tel:05442873043" class="btn btn-primary">Hemen Ara</a>
+                </div>
+                
+                <!-- Vezirköprü Acil Taksi -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Vezirköprü Acil Taksi</h3>
+                    <p>Acil durumlarda 7/24 hizmet veriyoruz. Hastane, acil servis ve diğer acil ulaşım ihtiyaçlarınız için en hızlı şekilde yanınızdayız.</p>
+                    <a href="tel:05442873043" class="btn btn-primary">Hemen Ara</a>
+                </div>
+                
+                <!-- Kurumsal Hizmet -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Kurumsal Hizmet</h3>
+                    <p>Firma çalışanları, misafirler ve kurumsal ihtiyaçlar için anlaşmalı taksi hizmeti. Düzenli müşterilerimize özel fiyat avantajları sunuyoruz.</p>
+                    <a href="tel:05442873043" class="btn btn-primary">Hemen Ara</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Araç Galerimiz</h2>
+                <p>Modern, temiz ve konforlu araç filomuzdan görüntüler</p>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/vezirkoprutaksi1.webp" alt="Vezirköprü Meydan Taksi araç görseli 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/vezirkoprutaksi2.webp" alt="Vezirköprü Meydan Taksi araç görseli 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/vezirkoprutaksi3.webp" alt="Vezirköprü Meydan Taksi araç görseli 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Müşteri Yorumları</h2>
+                <p>Hizmet kalitemizi müşterilerimizin yorumlarından öğrenin</p>
+            </div>
+            
+            <div class="reviews-container">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">MA</div>
+                            <div class="reviewer-name">
+                                <h4>Mustafa Arslan</h4>
+                                <div class="review-date">15 Kasım 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">
+                        "Vezirköprü'de taksi ihtiyacım olduğunda her zaman 0544 287 30 43'ü arıyorum. Hem hızlı geliyorlar hem de fiyatları çok uygun. Şoförler güler yüzlü ve saygılı. Kesinlikle tavsiye ediyorum."
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">AY</div>
+                            <div class="reviewer-name">
+                                <h4>Ayşe Yılmaz</h4>
+                                <div class="review-date">30 Ekim 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">
+                        "Samsun Havalimanı'ndan Vezirköprü'ye transfer için kullandım. Uçağım gecikmeli indi ama şoför beni bekliyordu. Aracı temiz, şoförü kibar. Bir dahaki sefere de tercih edeceğim."
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">HŞ</div>
+                            <div class="reviewer-name">
+                                <h4>Hasan Şahin</h4>
+                                <div class="review-date">22 Aralık 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">
+                        "Ailemle birlikte Şahinkaya Kanyonu turu yaptık. Şoförümüz bölgeyi çok iyi biliyordu, adeta rehberlik yaptı. Araç konforlu, fiyat uygun. Vezirköprü'ye gelen herkese tavsiye ederim."
+                    </div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">FD</div>
+                            <div class="reviewer-name">
+                                <h4>Fatma Demir</h4>
+                                <div class="review-date">10 Ocak 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">
+                        "Gece yarısı hastaneye gitmem gerekti. Hemen aradım, 10 dakikada kapımdaydı. Çok hızlı ve güvenli bir şekilde hastaneye ulaştık. Acil durumlar için gerçekten güvenilir bir firma."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SEO Article Section -->
+    <section class="seo-article" id="seo-article">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vezirköprü Taksi Hizmetleri Rehberi</h2>
+                <p>Vezirköprü'de güvenilir taksi hizmeti arayanlar için kapsamlı rehber</p>
+            </div>
+            
+            <div class="article-container">
+                <h2 class="article-title">Vezirköprü Meydan Taksi: Güvenilir Ulaşım Çözümleri</h2>
+                
+                <div class="article-content">
+                    <p><strong>Vezirköprü taksi</strong> hizmetleri, bölgenin en önemli ulaşım ihtiyaçlarından biridir. <strong>Vezirköprü taksi numarası</strong> arayanlar için doğru adres burasıdır. Şehir merkezinden en ücra mahallelere kadar 7/24 hizmet veren taksi şoförleri, Vezirköprü'nün trafik yapısını ve kısa yollarını çok iyi bilmektedir.</p>
+                    
+                    <h3>Vezirköprü Taksi Numarası Neden Önemli?</h3>
+                    <p><strong>Vezirköprü taksi numarası 0544 287 30 43</strong>, acil durumlarda veya planlı seyahatlerde en güvenilir iletişim kanalıdır. Telefonunuzda kayıtlı olan bu numara sayesinde, istediğiniz zaman bir taksi çağırabilir, şehir içi veya şehirler arası yolculuk planlayabilirsiniz.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Vezirköprü Meydan Taksi Avantajları</h4>
+                        <ul>
+                            <li><strong>7/24 Kesintisiz Hizmet:</strong> Gece-gündüz demeden hizmet veriyoruz</li>
+                            <li><strong>Deneyimli Şoförler:</strong> Bölgeyi iyi bilen profesyonel şoförler</li>
+                            <li><strong>Modern Araç Filosu:</strong> Temiz, bakımlı ve konforlu araçlar</li>
+                            <li><strong>Uygun Fiyat Politikası:</strong> Şeffaf ve rekabetçi fiyatlandırma</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Vezirköprü Taksi Durağı ve Merkezi Konumu</h3>
+                    <p><strong>Vezirköprü taksi durağı</strong>, şehir merkezinde stratejik noktalarda bulunmaktadır. Ancak günümüzde en pratik çözüm, <strong>Vezirköprü en yakın taksi</strong> hizmeti için telefonla çağrı merkezimizi aramaktır. Telefon ettiğiniz anda size en yakın taksi yönlendirilir ve en kısa sürede adresinizde olur.</p>
+                    
+                    <h3>Vezirköprü Meydan Taksi Hizmetleri</h3>
+                    <p><strong>Vezirköprü meydan taksi</strong> olarak sunduğumuz hizmetler oldukça çeşitlidir:</p>
+                    
+                    <ul>
+                        <li><strong>Şehir İçi Taksi:</strong> Günlük ulaşım ihtiyaçlarınız için</li>
+                        <li><strong>Havaalanı Transferi:</strong> Samsun Havalimanı'na zamanında ulaşım</li>
+                        <li><strong>Şehirler Arası Taksi:</strong> Komşu illere konforlu seyahat</li>
+                        <li><strong>Turistik Turlar:</strong> Şahinkaya Kanyonu ve çevresine rehberli turlar</li>
+                        <li><strong>Vezirköprü Acil Taksi:</strong> Acil sağlık ve diğer acil durum ulaşımları</li>
+                    </ul>
+                    
+                    <h3>Vezirköprü En Yakın Taksi Nasıl Bulunur?</h3>
+                    <p><strong>Vezirköprü en yakın taksi</strong> ihtiyacınız olduğunda yapmanız gereken tek şey <strong>0544 287 30 43</strong> numarasını aramaktır. Çağrı merkezimiz, bulunduğunuz konuma en yakın taksiyi size yönlendirecektir. Bu sayede bekleme süreniz minimuma inecek ve en kısa sürede ulaşım ihtiyacınız karşılanacaktır.</p>
+                    
+                    <h3>Güvenilir Vezirköprü Taksi Nasıl Anlaşılır?</h3>
+                    <p>Güvenilir bir <strong>Vezirköprü taksi</strong> hizmeti için dikkat etmeniz gereken bazı noktalar vardır:</p>
+                    
+                    <ul>
+                        <li>Taksimetrenin açık olması ve işliyor olması</li>
+                        <li>Şoförün kimlik bilgilerinin görünür olması</li>
+                        <li>Aracın temiz ve bakımlı olması</li>
+                        <li>Şoförün güler yüzlü ve iletişime açık olması</li>
+                        <li>Önceden net fiyat bilgisi verebilmesi</li>
+                    </ul>
+                    
+                    <p><strong>Vezirköprü taksi durağı</strong> arayışında olanlar veya <strong>Vezirköprü taksi numarası</strong> ihtiyacı olanlar için <strong>0544 287 30 43</strong> numarası her zaman en güvenilir çözümdür. Deneyimli ekibimiz ve modern araç filomuzla Vezirköprü'nün her noktasına hızlı, güvenli ve konforlu ulaşım sağlıyoruz.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Hızlı İletişim için:</h4>
+                        <p><strong>Vezirköprü Taksi Numarası:</strong> 0544 287 30 43</p>
+                        <p><strong>Çalışma Saatleri:</strong> 7/24 Kesintisiz Hizmet</p>
+                        <p><strong>Hizmet Bölgesi:</strong> Vezirköprü ve Tüm Çevre İller</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sıkça Sorulan Sorular</h2>
+                <p>Taksi hizmetlerimizle ilgili en çok sorulan sorular ve cevapları</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>7/24 hizmet veriyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, Vezirköprü Meydan Taksi olarak 7 gün 24 saat kesintisiz hizmet veriyoruz. Gece, hafta sonu ve resmi tatiller dahil her zaman arayabilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Şehirler arası taksi fiyatları nasıl belirleniyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Şehirler arası taksi fiyatları gidilecek mesafeye (km) göre belirlenir. Minimum ücret 200 TL'dir. Kesin fiyat için bizi arayabilir veya WhatsApp üzerinden konumunuzu göndererek fiyat alabilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Havaalanı transferinde uçuş gecikirse ne olur?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Havaalanı transferi yaptığınızda, uçuşunuzu takip ediyoruz. Uçuş gecikmeli bile olsa, iniş saatinize göre havaalanında sizi bekliyoruz. Ekstra bir ücret talep etmiyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kredi kartı ile ödeme yapabilir miyim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, tüm araçlarımızda kredi kartı ile ödeme yapabilirsiniz. Nakit ödeme seçeneği de mevcuttur. Kurumsal müşterilerimiz için fatura kesiyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Rezervasyon yaptırabilir miyim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, özellikle havaalanı transferi, şehirler arası yolculuk ve turistik geziler için önceden rezervasyon yaptırabilirsiniz. Telefon veya WhatsApp üzerinden rezervasyon yapabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>İletişim</h2>
+                <p>Taksi ihtiyaçlarınız için bize ulaşın, en kısa sürede size dönüş yapalım.</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Telefon</h3>
+                    <p>0544 287 30 43</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>0544 287 30 43</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Hizmet Bölgemiz</h3>
+                    <p>Vezirköprü ve Çevre İller</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>7/24 Kesintisiz Hizmet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popular Searches Section -->
+    <section class="popular-searches" id="popular-searches">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popüler Aramalar</h2>
+                <p>Vezirköprü taksi hizmetleriyle ilgili en çok aranan konular</p>
+            </div>
+            
+            <div class="searches-container">
+                <a href="#seo-article" class="search-tag">
+                    <i class="fas fa-search"></i> Vezirköprü Taksi
+                </a>
+                <a href="#seo-article" class="search-tag">
+                    <i class="fas fa-search"></i> Vezirköprü Meydan Taksi
+                </a>
+                <a href="#seo-article" class="search-tag">
+                    <i class="fas fa-search"></i> Vezirköprü Taksi Durağı
+                </a>
+                <a href="#seo-article" class="search-tag">
+                    <i class="fas fa-search"></i> Vezirköprü Acil Taksi
+                </a>
+                <a href="#seo-article" class="search-tag">
+                    <i class="fas fa-search"></i> Vezirköprü Taksi Numarası
+                </a>
+                <a href="#services" class="search-tag">
+                    <i class="fas fa-search"></i> Şehirler Arası Taksi
+                </a>
+                <a href="#services" class="search-tag">
+                    <i class="fas fa-search"></i> Havaalanı Transferi
+                </a>
+                <a href="#services" class="search-tag">
+                    <i class="fas fa-search"></i> Acil Taksi Vezirköprü
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Vezirköprü <span>Meydan Taksi</span></div>
+            <p>Vezirköprü'nün en güvenilir taksi servisi. Temiz araçlar, deneyimli şoförler ve uygun fiyat garantisiyle 7/24 hizmetinizdeyiz.</p>
+            
+            <div class="footer-copyright">
+                &copy; 2024 Vezirköprü Meydan Taksi - 0544 287 30 43. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/905442873043?text=Merhaba,%20Vezirköprü%20Meydan%20Taksi.%20Konumumu%20atıyorum,%20lütfen%20hemen%20gelelim." class="floating-btn whatsapp" target="_blank" title="WhatsApp ile iletişim">
+            <div class="whatsapp-tooltip">Konum atın hemen gelelim</div>
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05442873043" class="floating-btn call" title="Telefon ile ara">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    
+    <script>
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.getElementById('mobileNavToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+        
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        mobileNavClose.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close mobile nav when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Close other open answers
+                document.querySelectorAll('.faq-answer.active').forEach(activeAnswer => {
+                    if (activeAnswer !== answer) {
+                        activeAnswer.classList.remove('active');
+                        activeAnswer.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                        activeAnswer.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Toggle current answer
+                answer.classList.toggle('active');
+                
+                // Toggle icon
+                if (answer.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // Add wave effect to all buttons with the class
+        const waveButtons = document.querySelectorAll('.btn-wave-effect');
+        
+        waveButtons.forEach(button => {
+            button.addEventListener('mouseenter', function(e) {
+                const x = e.pageX - this.offsetLeft;
+                const y = e.pageY - this.offsetTop;
+                
+                const ripples = document.createElement('span');
+                ripples.style.left = x + 'px';
+                ripples.style.top = y + 'px';
+                this.appendChild(ripples);
+                
+                setTimeout(() => {
+                    ripples.remove();
+                }, 600);
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0.98)';
+                header.style.padding = '12px 0';
+                header.style.backdropFilter = 'blur(15px)';
+            } else {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+                header.style.padding = '18px 0';
+                header.style.backdropFilter = 'blur(10px)';
+            }
+        });
+        
+        // WhatsApp otomatik mesaj - balon otomatik görünsün
+        const whatsappTooltip = document.querySelector('.whatsapp-tooltip');
+        
+        // Popüler arama etiketlerine hover efekti
+        const searchTags = document.querySelectorAll('.search-tag');
+        
+        searchTags.forEach(tag => {
+            tag.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            tag.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Gallery image fallback
+        const galleryImages = document.querySelectorAll('.gallery-item img');
+        galleryImages.forEach(img => {
+            img.addEventListener('error', function() {
+                this.src = 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80';
+            });
+        });
+    </script>
+</body>
+</html>
